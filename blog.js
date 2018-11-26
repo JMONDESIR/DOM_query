@@ -4,7 +4,9 @@ firstSection.textContent = "Welcome to the Joel Mondesir blog";
 
 // 2. Use JavaScript to obtain a reference to all article__header elements and change their classList property value to article__header important.
 const allSection = document.querySelectorAll(".article__header");
-allSection.classList.add("important");
+for (var i = 0; i < allSection.length; i++) {
+  allSection[i].classList.add("important");
+}
 
 // 3. Obtain a reference the element with a class of dashed and remove it.
 const dashed = document.querySelector(".dashed");
